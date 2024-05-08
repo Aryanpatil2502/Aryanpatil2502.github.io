@@ -101,6 +101,11 @@ width: 160px;
     flex-direction: column;
     align-items: center;
     padding: 75px;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+
+    
 }
 
 
@@ -141,17 +146,6 @@ width: 160px;
     flex-wrap: wrap;
     flex-direction: column;
 }
-
-@media screen and (max-width: 768px) {
-    .a4 {
-      flex-direction: column;
-    }
-  
-    .top,
-    .image-holder {
-      flex: 1 1 100%;
-    }
- }
 
 
 .thor{
@@ -199,3 +193,10 @@ width: 160px;
     flex-wrap: wrap;
     flex-direction: column;
   }
+
+@media (min-width: 600px) {
+    .columns{
+        flex-direction: row;
+    }
+}
+
